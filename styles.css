@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: hsl(229, 25%, 31%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    max-width: 375px; /* Mobile width */
+    width: 90%;
+  }
+  
+  header {
+    background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    padding: 20px;
+    color: white;
+    border-bottom: 3px solid hsl(217, 16%, 45%);
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .score p {
+    font-weight: 600;
+    margin-right: 10px;
+    color: hsl(229, 64%, 46%);
+  }
+  
+  /* Styling for the Time Tracking Dashboard */
+  .user-wrapper {
+    background: hsl(236, 21%, 26%);
+    padding: 20px;
+  }
+  
+  ._header {
+    display: flex;
+    align-items: center;
+  }
+  
+  ._header img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  ._header h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  ._footer {
+    margin-top: 20px;
+  }
+  
+  ._footer button {
+    background: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background 0.2s ease;
+  }
+  
+  ._footer button.active {
+    background: hsl(349, 71%, 52%);
+  }
+  
+  .user-pannel {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pannel-box {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+    border: 2px solid black;
+    transition: border-color 0.3s ease;
+  }
+  
+  .pannel-box.work {
+    background: hsl(349, 71%, 52%);
+  }
+  
+  .pannel-box.play {
+    background: hsl(230, 89%, 62%);
+  }
+  
+  .pannel-box.study {
+    background: hsl(261, 73%, 60%);
+  }
+  
+  .pannel-box.home-duties {
+    background: hsl(39, 89%, 49%);
+  }
+  
+  .pannel-box.sleep-time {
+    background: hsl(189, 59%, 53%);
+  }
+  
+  .pannel-box:hover {
+    border-color: hsl(217, 16%, 45%);
+    color: white; /* Change text color to white on hover */
+  }
+  
+  .pannel-box ._body-box .period {
+    color: white; /* Change text color to white */
+  }
+  
+  ._header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  ._header-box h1 {
+    font-size: 1.2rem;
+  }
+  
+  ._header-box span img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  
+  ._body-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .hrs {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+    color: hsl(229, 64%, 46%);
+  }
+  

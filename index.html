@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Time Tracking Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Time Tracking Dashboard</h1>
+      <div class="score">
+        <p>Logged in as <span>Michael Rubriche</span></p>
+      </div>
+    </header>
+    <div class="user-wrapper">
+      <div class="_header">
+        <img src="images/image-michael.png" alt="User Avatar">
+        <h1>Report for <span>Michael Rubriche</span></h1>
+      </div>
+      <div class="_footer">
+  <button id="daily">Daily</button>
+  <button id="weekly" class="active">Weekly</button>
+  <button id="monthly">Monthly</button>
+</div>
+
+    </div>
+    <div class="user-pannel">
+      <!-- Task cards -->
+      <div class="pannel-box work">
+        <div class="box-content">
+          <div class="_header-box">
+            <h1>Work</h1>
+            <span><img src="icons/icon-elipsis.svg" alt=""></span>
+          </div>
+          <div class="_body-box">
+            <p class="hrs">32hrs</p>
+            <p class="period">Last Weekly - 32hrs</p>
+          </div>
+        </div>
+      </div>
+      <!-- Task cards for Study, Home Duties, and Sleep Time -->
+      <div class="pannel-box study">
+        <div class="box-content">
+          <div class="_header-box">
+            <h1>Study</h1>
+            <span><img src="icons/icon-elipsis.svg" alt=""></span>
+          </div>
+          <div class="_body-box">
+            <p class="hrs">20hrs</p>
+            <p class="period">Last Weekly - 20hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="pannel-box home-duties">
+        <div class="box-content">
+          <div class="_header-box">
+            <h1>Home Duties</h1>
+            <span><img src="icons/icon-elipsis.svg" alt=""></span>
+          </div>
+          <div class="_body-box">
+            <p class="hrs">50hrs</p>
+            <p class="period">Last Monthly - 50hrs</p>
+          </div>
+        </div>
+      </div>
+      <div class="pannel-box sleep-time">
+        <div class="box-content">
+          <div class="_header-box">
+            <h1>Sleep Time</h1>
+            <span><img src="icons/icon-elipsis.svg" alt=""></span>
+          </div>
+          <div class="_body-box">
+            <p class="hrs">56hrs</p>
+            <p class="period">Last Daily - 56hrs</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more task cards here as needed -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
